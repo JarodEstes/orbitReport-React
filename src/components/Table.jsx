@@ -9,6 +9,7 @@ const Table = ({ sat }) => {
        <th>Type of Satellite</th>
        <th>Launch Date</th>
        <th>Status</th>
+       {/* create headers */}
     
      </tr>
      </thead>
@@ -16,6 +17,7 @@ const Table = ({ sat }) => {
       return (
         <tbody>
      <tr key ={id}>
+      {/* identifier */}
        <td>{data.name}</td>
        <td>{data.type}</td>
        <td>{data.launchDate}</td>
