@@ -1,6 +1,7 @@
 import "./styling.css"
 
 const Table = ({ sat }) => {
+  // passing the sat object in
   return (
     <table>
     <thead>
@@ -14,6 +15,7 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      {sat.map((data, id) => {
+      //mapping through sat using callbacks id and data
       return (
         <tbody>
      <tr key ={id}>
@@ -22,6 +24,7 @@ const Table = ({ sat }) => {
        <td>{data.type}</td>
        <td>{data.launchDate}</td>
        <td>{data.operational}</td>
+       {/*table data tags displaying the data about the satellite */}
      </tr>
      </tbody>
       )
